@@ -32,7 +32,7 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 ### Jekyll Themes
 
-<a href="page1.html">Page 2</a>
+<a href="test.html">Page 2</a>
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Theosau/Theosau.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
