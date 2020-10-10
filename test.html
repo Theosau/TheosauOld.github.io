@@ -92,14 +92,14 @@ for (i = 0; i < acc.length; i++) {
     <h2>Open <b>multiple</b></h2>
     <div class="tabs">
       <div class="tab">
-        <input type="checkbox" id="chck1">
-        <label class="tab-label" for="chck1">Item 1</label>
+        <input type="checkbox" id="chck1" onclick="onlyOne(this)">
+        <label class="tab-label" for="chck1" >Item 1</label>
         <div class="tab-content">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis!
         </div>
       </div>
       <div class="tab">
-        <input type="checkbox" id="chck2">
+        <input type="checkbox" id="chck2" onclick="onlyOne(this)">
         <label class="tab-label" for="chck2">Item 2</label>
         <div class="tab-content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
@@ -131,6 +131,10 @@ for (i = 0; i < acc.length; i++) {
 
 
 <script>
-document.getElementById("rd1").checked = false;
-document.getElementById("rd2").checked = false;
+function onlyOne(checkbox) {
+    var checkboxes = document.getElementsByName('check')
+    checkboxes.forEach((item) => {
+        if (item !== checkbox) item.checked = false
+    })
+}
 </script>
