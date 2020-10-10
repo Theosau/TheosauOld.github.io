@@ -2,9 +2,9 @@ name: Theophile Sautory
 markdown: kramdown
 
 sass:
-  load_paths:
-    - _sass
-    - node_modules
+  #load_paths:
+  #  - _sass
+  #  - node_modules
   style: compressed
 
 #theme: jekyll-theme-minimal
