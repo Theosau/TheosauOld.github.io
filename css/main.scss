@@ -5,6 +5,21 @@ body {
     margin: 60px auto;
     width: 70%;
 }
+
+.center7 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.center6 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
@@ -36,8 +51,8 @@ footer {
     font-size: .8em;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
+ul.posts {
+    margin: 20px auto 40px;
     font-size: 1.5em;
 }
 
@@ -45,6 +60,22 @@ ul.posts li {
     list-style: none;
 }
 
+
+.center {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 50%;
+}
+
+p.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 29em;
+    justify-content: right;
+    font-size: 1em;
+    line-height: 1.1em;
+}
 
 
 $midnight: #2c3e50;
@@ -144,4 +175,3 @@ input:checked {
     padding: 1em;
   }
 }
-

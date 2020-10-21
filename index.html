@@ -1,8 +1,332 @@
 ---
 layout: default
-title: Theophile Sautory, Research and Projects
+title: Theophile Sautory
 ---
-<div class="blurb">
-	<h1>Hi there, I'm Theophile Sautory!</h1>
-		<p>I love basketball, cycling, literature and techno music.  I also love learning about the world and researching about <em>Machine Learning</em>, <em>Fluid Dynamics</em> and other stuff! </p>
-</div><!-- /.blurb -->
+
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+	</script>
+<style>
+	h1 {font-size: 40px;}
+	h2 {font-size: 35px;}
+	h3 {font-size: 30px;}
+	p {font-size: 16px;}
+
+	div {
+  text-align: justify;
+  text-justify: inter-word;
+	}
+
+	.myaccordion {
+	  max-width: 700px;
+	  margin: 50px auto;
+	  box-shadow: 0 0 1px rgba(0,0,0,0.1);
+	}
+
+	.myaccordion .card,
+	.myaccordion .card:last-child .card-header {
+	  border: none;
+	}
+
+	.myaccordion .card-header {
+	  border-bottom-color: #EDEFF0;
+	  background: transparent;
+	}
+
+	.myaccordion .fa-stack {
+	  font-size: 18px;
+	}
+
+	.myaccordion .btn {
+	  width: 100%;
+	  font-weight: bold;
+	  color: #004987;
+	  padding: 0;
+	}
+
+	.myaccordion .btn-link:hover,
+	.myaccordion .btn-link:focus {
+	  text-decoration: none;
+	}
+
+	.myaccordion li + li {
+	  margin-top: 1px;
+	}
+
+
+	.myaccordion2 {
+		max-width: 700px;
+		margin: -10px auto;
+		box-shadow: 0 0 1px rgba(0,0,0,0.1);
+	}
+
+	.myaccordion2 .card,
+	.myaccordion2 .card:last-child .card-header {
+		border: none;
+	}
+
+	.myaccordion2 .card-header {
+		border-bottom-color: #EDEFF0;
+		background: transparent;
+	}
+
+	.myaccordion2 .fa-stack {
+		font-size: 18px;
+	}
+
+	.myaccordion2 .btn {
+		width: 100%;
+		font-weight: bold;
+		color: #870006;
+		padding: 0;
+	}
+
+	.myaccordion2 .btn-link:hover,
+	.myaccordion2 .btn-link:focus {
+		text-decoration: none;
+	}
+
+	.myaccordion2 li + li {
+		margin-top: 1px;
+	}
+</style>
+<script>
+	$('.collapse').on('shown.bs.collapse', function(e) {
+		var $card = $(this).closest('.card');
+		$('html,body').animate({
+			scrollTop: $card.offset().top
+		}, 500);
+	});
+</script>
+</head>
+
+
+
+<body>
+		<div class="blurb">
+			<h1>Theophile Sautory</h1><br>
+			<h2>Research and Projects</h2>
+				<p>I love basketball, cycling, literature and techno music.  I also love learning about the world and researching about <em>Machine Learning</em>, <em>Fluid Dynamics</em> and other stuff! </p>
+				<!-- <a href="https://theosau.github.io/test.html">My development website!</a> -->
+		</div><!-- /.blurb -->
+
+		<div id="accordion" class="myaccordion">
+		  <div class="card" >
+		    <div class="card-header" id="headingOne" >
+		      <h5 class="mb-0">
+		        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+		          Artificial Intelligence
+		        </button>
+		      </h5>
+		    </div>
+		    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+		      <div class="card-body">
+						<div id="accordion2" class="myaccordion2">
+							<div class="card" >
+						    <div class="card-header" id="heading2Zero" >
+						      <h5 class="mb-0">
+						        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2Zero" aria-expanded="true" aria-controls="collapse2Zero">
+						          Journey
+						        </button>
+						      </h5>
+						    </div>
+						    <div id="collapse2Zero" class="collapse" aria-labelledby="heading2Zero" data-parent="#accordion2">
+						      <div class="card-body">
+										My journey in artificial intelligence (AI) and machine learning (ML) started in early 2018 during my masters in Mechanical Engineering
+										(MEng) at <a href="https://www.imperial.ac.uk/study/ug/courses/mechanical-engineering-department/mechanical-engineering-meng/">Imperial College London</a>.
+										To dive deeper into the subject and discover some of it's business applications, I undertook
+										a summer internship at <a href="http://www.vekia.co.uk/"><img src="../images/logos/vekia.png"
+										width=50></a>, a company developing
+										a cutting-edge software technology for Supply Chain Automation.
+										<!-- There, I developed a statistical model to describe
+										censored sales and predict lost sales and predicted the distribution parameters with an artificial neural netowrk (ANN). --> <br>
+										<br>
+										I followed by applying ANNs to fluid dynamics in my masters' thesis, before studying a masters in AI and ML at
+										<a href="https://www.imperial.ac.uk/study/pg/computing/ai-ml/">Imperial College London</a>, where I focused on
+										neuro-symbolic AI in the scope of my masters and postgraduate research. <br>
+										<br>
+										Find more details of my research and projects in the following. <br>
+										<br>
+										I am now working as a Machine Learning Researcher at <a href="https://scortex.io/"><img src="../images/logos/scortex.png"
+				width=80></a> - explore our
+										<a href="https://twitter.com/scortex?lang=en">Twitter</a> and our
+										<a href="https://scortex.io/blog/">ML blog</a>!
+									</div>
+						    </div>
+						  </div>
+
+
+						  <div class="card" >
+						    <div class="card-header" id="heading2One" >
+						      <h5 class="mb-0">
+						        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2One" aria-expanded="true" aria-controls="collapse2One">
+						          Research
+						        </button>
+						      </h5>
+						    </div>
+
+						    <div id="collapse2One" class="collapse" aria-labelledby="heading2One" data-parent="#accordion2">
+						      <div class="card-body">
+											<ul>
+												<li> <a href="https://theosau.github.io/ai_research/neurosymbolic_vqa.html"> Neuro-symbolic AI </a> for the <a href="http://clevrer.csail.mit.edu/">CLEVRER dataset</a>
+									</div>
+						    </div>
+						  </div>
+
+							<div class="card">
+						    <div class="card-header" id="heading2Two">
+						      <h5 class="mb-0">
+						        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2Two" aria-expanded="false" aria-controls="collapse2Two">
+						          Projects
+						        </button>
+						      </h5>
+						    </div>
+						    <div id="collapse2Two" class="collapse" aria-labelledby="heading2Two" data-parent="#accordion2">
+						      <div class="card-body">
+										<ul>
+										  <li>Deep Learning
+												<ul>
+													<li> <a href="https://github.com/Theosau/Convolutional_Neural_Networks">Convolutional Neural Networks</a></li>
+													<li> <a href="https://github.com/Theosau/VAE_and_GANS">Generative models: VAEs and DCGANs</a></li>
+													<li> <a href="https://github.com/Theosau/RNNs">RNNs and LSTMs</a></li>
+												</ul>
+											</li>
+										  <li>Natural Language Processing
+												<ul>
+													<li> <a href="https://github.com/marc-dlf/nlp_sentence_level_qe_co_490">Codalab Machine Translation Evaluation</a></li>
+												</ul>
+											</li>
+										  <li>Machine Learning for Imaging
+												<ul>
+													<li> <a href="https://github.com/Theosau/Medical_Imaging">3D Brain MRI segmentation and patient age regression</a></li>
+												</ul>
+											</li>
+											<li>Reinforcement Learning
+												<ul>
+													<li> <a href="https://github.com/Theosau/RL-Markov-Decision-Process-and-Grid-World">Markov Decision Process and Grid World</a></li>
+													<li> <a href="https://github.com/Theosau/DQN_RL_maze-">Deep Q-Network to solve a maze</a></li>
+												</ul>
+											</li>
+											<li>Machine Learning algortihms from Python built-in functions and NumPy
+												<ul>
+													<li> <a href="https://github.com/Theosau/FFNN_library">Neural Network Library</a></li>
+													<li> <a href="https://github.com/ludomitch/decision_tree">Decision Tree</a></li>
+												</ul>
+											</li>
+										</ul>
+						      </div>
+						    </div>
+						  </div>
+		      </div>
+		    </div>
+		  </div>
+
+
+
+		  <div class="card">
+		    <div class="card-header" id="headingTwo">
+		      <h5 class="mb-0">
+		        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+		          Fluid Dynamics
+		        </button>
+		      </h5>
+		    </div>
+
+		    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+		      <div class="card-body">
+
+
+						<div id="accordion2_1" class="myaccordion2">
+							<div class="card" >
+
+								<div class="card-header" id="heading1Zero">
+						      <h5 class="mb-0">
+						        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1Zero" aria-expanded="true" aria-controls="collapse1Zero">
+						          Journey
+						        </button>
+						      </h5>
+							  </div>
+                <div id="collapse1Zero" class="collapse" aria-labelledby="heading1Zero" data-parent="#accordion2_1">
+						      <div class="card-body">
+										My journey in fluid dynamics began as soon as I started studying Mechanical
+										Engineering at Imperial Colloge London. I was rapidly fond of the topic and focused on
+										it throughout my 4 years: developing an artificial intelligence model to close Larger-Eddy
+										Simulations of the Navier-Stokes equations, writing literature review on bi-stability in fluid dynamics,
+										or developing an engine specifically tailored for parabolic flights. <br>
+										<br>
+										Learn more about these research and projects in the panes below.
+										Send me an <a href="mailto:theophile.sautory@gmail.com">email</a> if you
+										are interested in discussing the topics and my work more in depth.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header" id="heading1One" >
+						      <h5 class="mb-0">
+						        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1One" aria-expanded="true" aria-controls="collapse1One">
+						          Research
+						        </button>
+						      </h5>
+						    </div>
+	              <div id="collapse1One" class="collapse" aria-labelledby="heading1One" data-parent="#accordion2_1">
+						      <div class="card-body">
+										<ul>
+											<li> <a href="https://theosau.github.io/ai_research/turbulence_ann.html">
+												Turbulence Modelling with Artificial Neural Networks </a> </li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header" id="heading1two" >
+									<h5 class="mb-0">
+										<button class="btn btn-link" data-toggle="collapse" data-target="#collapse1two" aria-expanded="true" aria-controls="collapse1two">
+											Projects
+										</button>
+									</h5>
+								</div>
+								<div id="collapse1two" class="collapse" aria-labelledby="heading1two" data-parent="#accordion2_1">
+									<div class="card-body">
+										<ul>
+											<li> Aircraft engine for parabolic flights </li>
+											<li> Bi-stability in Fluid Dynamics, Literature Research Project </li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+		    	</div>
+		  	</div>
+
+
+
+		  <div class="card">
+		    <div class="card-header" id="headingThree">
+		      <h5 class="mb-0">
+		        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+		          Design Engineering
+		        </button>
+		      </h5>
+		    </div>
+		    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+		      <div class="card-body">
+						A project I particularly enjoyed in the field of Design Engineering was the development of a binoic hand
+						for below elbow amputees, specifically designed for digital interface use. I had the chance to work with
+						4 of my classmates and Mr. Alex Lewis, who works as an interior designer. <br>
+						<br>
+						Our work served as a proof-of-concept of the design, make and test of a cheap, light-weight bionic hand,
+						to form a basis to be built on for next generations of students.
+		      </div>
+		    </div>
+		  </div>
+		</div>
+</body>
+
+<footer>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</footer>

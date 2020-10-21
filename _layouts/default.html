@@ -1,34 +1,56 @@
 <!DOCTYPE html>
 <html>
+
+<!-- <style>
+#footer {
+		position: fixed;
+		height: 50px;
+		background-color: white;
+		bottom: 0px;
+		left: 25%;
+		right: 25%;
+		margin-bottom: 0px;
+}
+
+body {
+		margin-bottom:50px;
+}
+</style> -->
+
 	<head>
 		<title>{{ page.title }}</title>
-		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
-		<style>html {scroll-behavior: smooth;}</style>
-
+		<style>
+			html {scroll-behavior: smooth;}
+		</style>
 	</head>
 	<body>
 		<nav>
     		<ul>
         		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
+	        	<!-- <li><a href="/about">About</a></li> -->
+        		<!-- <li><a href="/cv">CV</a></li> -->
+        		<!-- <li><a href="/blog">Blog</a></li> -->
     		</ul>
 		</nav>
-    
+
 		<div class="container">
     {{ content }}
 		</div><!-- /.container -->
-    
+
 		<footer>
+		<!-- <div id="footer"> -->
     		<ul>
-        		<li><a href="mailto:theophile.sautory@gmail.com"> <span style='font-size:20px;'>&#128232;</span></a></li>
+        		<li><a href="mailto:theophile.sautory@gmail.com"> <img src="../images/logos/
+							gmail.svg" width=30> </a></li>
         		<li><a href="https://github.com/Theosau"><img src="../images/logos/
-github_logo.png" width=20 height=20/></a></li>
-			<li><a href="https://scholar.google.com/citations?user=pq_c7EQAAAAJ&hl=en"><img src="../images/logos/google-scholar.svg
-" width=20 height=20/></a></li>
+							github.svg" width=30></a></li>
+						<li><a href="https://scholar.google.com/citations?user=pq_c7EQAAAAJ&hl=en"><img src="../images/logos/google-scholar.svg"
+							width=30></a></li>
+						<li><a href="https://www.linkedin.com/in/theophilesautory"><img src="../images/logos/linkedin.png"
+							width=30></a></li>
 			</ul>
+		<!-- </div> -->
 		</footer>
 	</body>
 </html>
