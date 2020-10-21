@@ -9,6 +9,22 @@ title: Turbulence Modelling with Artificial Neural Networks
       line-height: 1.2em;
       color: #333;
   }
+  
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+  
 </style>
 
 <body>
@@ -43,9 +59,9 @@ title: Turbulence Modelling with Artificial Neural Networks
       incorporates small-scale terms of motion.
     </p>
     <br>
-    <p>
+    <div class="imgbox">
       <img src="/images/turb_ann/nse.png" class="center">
-    </p>
+    </div>
     <p class="blocktext" align="justify">
         The spatially averaged Navier-Stokes. The terms correspond to the usual
         meanings in the field of Fluid Dynamics which will not be discussed here.
