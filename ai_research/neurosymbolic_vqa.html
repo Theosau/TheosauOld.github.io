@@ -1,0 +1,115 @@
+---
+layout: default
+title: Neuro-Symbolic Video Question Answering
+---
+
+<style>
+  p {
+      font-size: 1.2em;
+      line-height: 1.2em;
+      color: #333;
+  }
+
+  * {
+      margin: 0;
+      padding: 0;
+  }
+
+  ol.q {list-style-type: upper-roman;}
+
+  h1 {font-size: 40px;}
+</style>
+
+<body>
+  <div class="blurb">
+    <h1>Neuro-Symbolic Video Question Answering</h1>
+      <p align="justify">
+        During my MSc in AI and ML at Imperial College London, I explored
+        the task of video understanding through the proxy task of Video Question
+        Answering (VideoQA). My objective was to investiagte ways to equip an
+        AI model with visual reasoning abilities: perception, and causal and temporal reasoning. <br>
+        <br>
+        To develop such a model I decided to tackle the VideoQA
+        task, especially that from the <a href="http://clevrer.csail.mit.edu/">CLEVRER</a>: Collision
+        Events for Video Representation and Reasoning dataset;
+        developed by the <a href="https://mitibmwatsonailab.mit.edu/research/"">
+        MIT-Watson Lab</a>. The dataset is composed of videos exhibiting
+        motion and collision between objects on a constant background, whilst
+        the questions require causal and temporal reasoning to be answered. <br>
+        <br>
+        I held this research under the supervision of <a href="https://wp.doc.ic.ac.uk/arusso/">
+        Professor Alessandra Russo</a> and <a href="https://www.doc.ic.ac.uk/~nuric/pages/research.html">
+        Nuri Cingillioglu</a>, with whom I will be publishing and presenting my work
+        as a full paper and presentation in the Thirty-Fifth AAAI Conference Workshop on Hybrid
+        Artificial Intelligence. We will soon make the paper available on ArXiv. <br><br>
+      </p>
+    <p>
+      <img src="/gifs/svp_video_9000_description_6.gif" class="center">
+    </p>
+    <p class="blocktext" align="justify">
+          Video of the <a href="http://clevrer.csail.mit.edu/">CLEVRER dataset</a>
+          annotated by our model. The object descriptions and events are
+          extracted from the model’s reasoning.
+    </p>
+
+    <h2> <u> Summary </u> </h2>
+      <p align="justify">
+        We developed a family of neuro-symbolic framework for the task of VideoQA, which we
+        tested the CLEVRER datatset, the HySTER: Hybrid Spatio-Temporal Event Reasoner. <br>
+        <br>
+        Our models leverage the strength of deep learning methods to extract information
+        from low-level video frames and ground a symbolic representation of the objects
+        and their position in the scene. The symbolic component then performs temporal
+        and causal reasoning over the reconstructed scene, detecting the events occurring and
+        answering the questions. <br>
+        <br>
+      </p>
+
+    <h2> <u> Methodology </u> </h2>
+    <p align="justify">
+      An overview of the overall framework is presented in the following figure, and comprises
+      three main components.
+    </p>
+    <br>
+
+    <div style="font-size:1.2em">
+        <ol style="list-style-type:upper-roman">
+          <li>
+            <b> Video Parser:</b> detects, classifies and localises the objects in the scene.
+            This infromation is then translated into a symbolic representation.
+          </li>
+          <br>
+          <li>
+            <b> Question Parser: </b> translates the natural language questions into
+            logic queries.
+          </li>
+          <br>
+          <li>
+            <b> Symbolic Reasoner: </b> detects events from the abstract
+            scene representation built by <b> Video Parser</b>, and reasons over them
+            to answer the queries.
+          </li>
+        </ol>
+    </div>
+
+    <p>
+      <img src="/images/ns_vqa/architecture.png" class="center7">
+    </p>
+    <p class="blocktext" align="justify">
+          Overview of the model architecture composed of 3 main components: <b>I</b>.
+          Video Parser, <b>II</b>. Question Parser, <b>III</b>. Symbolic Reasoner.  The yellow
+          shaded parts refer to general components transferable between tasks.
+          The green shaded parts refer to task specific symbolic components and
+          information.
+    </p>
+    <br>
+    <h2> <u> Results </u> </h2>
+    <p>
+      Find the results on the <a href="https://evalai.cloudcv.org/web/challenges/challenge-page/667/leaderboard/1813">
+      CLEVRER challenge leaderboard </a>, under the label <em>TS_NS_IMPERIAL</em>,
+      where we outperfromed the baselines set in the
+      <a href="https://arxiv.org/abs/1910.01442">CLEVRER paper</a>.
+    </p>
+  </div>
+  <br>
+</body>
