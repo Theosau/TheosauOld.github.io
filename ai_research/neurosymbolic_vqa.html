@@ -59,11 +59,11 @@ title: Neuro-Symbolic Video Question Answering
         We developed a family of neuro-symbolic framework for the task of VideoQA, which we
         tested the CLEVRER datatset, the HySTER: Hybrid Spatio-Temporal Event Reasoner. <br>
         <br>
-        Our models leverage the strength of deep learning methods to extract information
+        Our models leverage the strength of deep learning methods through Mask R-CNN and ResNets to extract information
         from low-level video frames and ground a symbolic representation of the objects
-        and their position in the scene. The symbolic component then performs temporal
-        and causal reasoning over the reconstructed scene, detecting the events occurring and
-        answering the questions. <br>
+        along with their position in the scene. The symbolic component, implemented under the form of Answer section
+        programming using clingo, then performs temporal and causal reasoning over the reconstructed scene,
+        detecting the events occurring and answering the questions. <br>
         <br>
       </p>
 
@@ -88,7 +88,7 @@ title: Neuro-Symbolic Video Question Answering
           <br>
           <li>
             <b> Symbolic Reasoner: </b> detects events from the abstract
-            scene representation built by <b> Video Parser</b>, and reasons over them
+            scene representation built by the <b> Video Parser</b>, and reasons over them
             to answer the queries.
           </li>
         </ol>
@@ -99,10 +99,14 @@ title: Neuro-Symbolic Video Question Answering
     </p>
     <p class="blocktext" align="justify">
           Overview of the model architecture composed of 3 main components: <b>I</b>.
-          Video Parser, <b>II</b>. Question Parser, <b>III</b>. Symbolic Reasoner.  The yellow
+          Video Parser, <b>II</b>. Question Parser, <b>III</b>. Symbolic Reasoner. The yellow
           shaded parts refer to general components transferable between tasks.
           The green shaded parts refer to task specific symbolic components and
           information.
+    </p>
+    <br>
+    <p align="justify">
+    We will soon upload our code and examples of the ASP programs built to solve the task.
     </p>
     <br>
     <h2> <u> Results </u> </h2>
@@ -115,6 +119,16 @@ title: Neuro-Symbolic Video Question Answering
       (Please note that the results in the leaderboard correspond to our best overall
       score, not the best performance in each question type, hence the difference
       with the values in our paper).
+    </p>
+    <br>
+    <h2> <u> Next Steps </u> </h2>
+    <p align="justify">
+    We aim to explore the potential of using inductive logic programming and
+    <a href="http://ilasp.com/?no_animation">ILASP</a> to remove a large
+    amount of the human engineering in the process, allowing the model to learn event detection
+    rules directly from the abstract scene representation and question-answer pairs.
+    Please <a href="mailto:theophile.sautory@gmail.com">contact me</a>
+    for details concerning our symbolic rule learning methodology and initial results.
     </p>
   </div>
   <br>
