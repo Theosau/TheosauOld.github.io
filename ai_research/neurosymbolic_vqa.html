@@ -23,14 +23,15 @@ title: Neuro-Symbolic Video Question Answering
 <body>
   <div class="blurb">
     <h1>Neuro-Symbolic Video Question Answering</h1>
+    <br>
       <p align="justify">
         During my MSc in AI and ML at Imperial College London, I explored
         the task of video understanding through the proxy task of Video Question
         Answering (VideoQA). My objective was to investiagte ways to equip an
         AI model with visual reasoning abilities: perception, and causal and temporal reasoning. <br>
         <br>
-        To develop such a model I decided to tackle the VideoQA
-        task, especially that from the <a href="http://clevrer.csail.mit.edu/" target="_blank">CLEVRER</a>: Collision
+        The VideoQA task I selected was that from the
+        <a href="http://clevrer.csail.mit.edu/" target="_blank">CLEVRER</a>: Collision
         Events for Video Representation and Reasoning dataset;
         developed by the <a href="https://mitibmwatsonailab.mit.edu/research/" target="_blank">
         MIT-Watson Lab</a>. The dataset is composed of videos exhibiting
@@ -56,14 +57,17 @@ title: Neuro-Symbolic Video Question Answering
 
     <h2> <u> Summary </u> </h2>
       <p align="justify">
-        We developed a family of neuro-symbolic framework for the task of VideoQA, which we
-        tested the CLEVRER datatset, the HySTER: Hybrid Spatio-Temporal Event Reasoner. <br>
+        We developed a neuro-symbolic framework for the task of VideoQA, named the
+        HySTER: Hybrid Spatio-Temporal Event Reasoner, which we
+        tested on the CLEVRER datatset. <br>
         <br>
-        Our models leverage the strength of deep learning methods through Mask R-CNN and ResNets to extract information
-        from low-level video frames and ground a symbolic representation of the objects
-        along with their position in the scene. The symbolic component, implemented under the form of Answer section
-        programming using clingo, then performs temporal and causal reasoning over the reconstructed scene,
-        detecting the events occurring and answering the questions. <br>
+        Our model leverage the strength of deep learning through Mask R-CNN and
+        ResNets in order to extract information from low-level video frames and
+        ground a symbolic representation of the objects along with their position
+        in the scene. The symbolic component, implemented under the form of Answer
+        Set Programming (ASP) using clingo, then performs temporal and causal reasoning
+        over the reconstructed scene, detecting the events occurring and answering
+        the questions. <br>
         <br>
       </p>
 
@@ -93,7 +97,7 @@ title: Neuro-Symbolic Video Question Answering
           </li>
         </ol>
     </div>
-
+    <br>
     <p>
       <img src="/images/ns_vqa/architecture.png" class="center7">
     </p>
